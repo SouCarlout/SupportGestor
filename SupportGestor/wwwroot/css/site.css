@@ -12,12 +12,6 @@ a, .btn-link {
     color: #0071c1;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
 .content {
     padding-top: 1.1rem;
 }
@@ -26,9 +20,6 @@ a, .btn-link {
     outline: 1px solid #26b050;
 }
 
-.invalid {
-    outline: 1px solid red;
-}
 
 .validation-message {
     color: red;
@@ -62,3 +53,52 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+.Facil{
+    color:#1bcf00;
+}
+.Razoavel{
+    color:#07b936;
+}
+.Medio{
+    color:#dbbd09;
+}
+.Complexo{
+    color:#ff6906;
+}
+.Dificil{
+    color:red;
+}
+
+.BotaoSimples {
+    align-content:center;
+    justify-content:center;
+    height:30px;
+    width:100px;
+    color:#517df6a6;
+
+}
+
+.BotaoCascata {
+    align-content: center;
+    justify-content: center;
+    height: 30px;
+    width: 180px;
+    background-color:#ffffff;
+}
+
+.CaixaDeTexto{
+
+}
+.padding-4{
+    padding:2rem;
+}
+.ConteudoLancarAtendimento{
+    grid:auto;
+    justify-content:flex-start;
+    align-items:start;
+    display:flex;
+    gap:20px;
+
+}

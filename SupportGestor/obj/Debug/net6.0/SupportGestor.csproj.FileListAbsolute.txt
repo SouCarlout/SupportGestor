@@ -29,3 +29,14 @@ C:\Users\gabri\source\repos\SupportGestor\SupportGestor\obj\Debug\net6.0\refint\
 C:\Users\gabri\source\repos\SupportGestor\SupportGestor\obj\Debug\net6.0\SupportGestor.pdb
 C:\Users\gabri\source\repos\SupportGestor\SupportGestor\obj\Debug\net6.0\SupportGestor.genruntimeconfig.cache
 C:\Users\gabri\source\repos\SupportGestor\SupportGestor\obj\Debug\net6.0\ref\SupportGestor.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\obj\Debug\net6.0\SupportGestor.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Humanizer.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Npgsql.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\gabri\source\repos\SupportGestor\SupportGestor\obj\Debug\net6.0\SupportG.8575FA9D.Up2Date
