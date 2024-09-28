@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDBA725-0930-43E5-8F6D-F1FD556F7E44}|Support\\Support.csproj|c:\\users\\gabri\\source\\repos\\support\\supportgestor\\support\\components\\pages\\atendimentos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDBA725-0930-43E5-8F6D-F1FD556F7E44}|Support\\Support.csproj|solutionrelative:support\\components\\pages\\atendimentos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Atendimentos.razor",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\Support\\Components\\Pages\\Atendimentos.razor",
+              "RelativeDocumentMoniker": "Support\\Components\\Pages\\Atendimentos.razor",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\Support\\Components\\Pages\\Atendimentos.razor",
+              "RelativeToolTip": "Support\\Components\\Pages\\Atendimentos.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T15:01:36.417Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
