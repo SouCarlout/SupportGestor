@@ -7,7 +7,7 @@ namespace SupportGestor.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
-        public DbSet<Atendimento> Atendimentos { get; set; }
+        public DbSet<AtendimentoModel> Atendimentos { get; set; }
     }
 
 }

@@ -1,6 +1,9 @@
-﻿
-@using SupportGestor.Models
+﻿@using SupportGestor.Models
 @using SupportGestor.ViewModels
+@using SupportGestor.Services
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject IAtendimentoServices AtendimentoService
 
 @page "/Atendimento"
 
@@ -31,4 +34,10 @@
     {
         await viewModel.Salvar();
     }
+
+    protected override Task OnInitializedAsync()
+    {
+        if(AtendimentoId > 0)
+    }
+
 }

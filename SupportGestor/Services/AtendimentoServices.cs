@@ -12,23 +12,23 @@ namespace SupportGestor.Services
         {
             _context = context;
         }
-        public async Task<List<Atendimento>> GetAllAtendimentosAsync()
+        public async Task<List<AtendimentoModel>> GetAllAtendimentosAsync()
         {
             return await _context.Atendimentos.ToListAsync();
         }
 
-        public async Task<Atendimento> GetAtendimentoByIdAsync(int id)
+        public async Task<AtendimentoModel> GetAtendimentoByIdAsync(int id)
         {
             return await _context.Atendimentos.FindAsync(id);
         }
 
-        public async Task AddAtendimentoAsync(Atendimento Atendimento)
+        public async Task AddAtendimentoAsync(AtendimentoModel Atendimento)
         {
             _context.Atendimentos.Add(Atendimento);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAtendimentoAsync(Atendimento Atendimento)
+        public async Task UpdateAtendimentoAsync(AtendimentoModel Atendimento)
         {
             _context.Atendimentos.Update(Atendimento);
             await _context.SaveChangesAsync();
