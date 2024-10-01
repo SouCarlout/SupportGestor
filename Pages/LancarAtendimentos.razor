@@ -1,0 +1,46 @@
+﻿@page "/Atendimento"
+@using SupportGestor.Models
+@using SupportGestor.Services
+@inject IAtendimentoServices AtendimentoService
+@inject NavigationManager Navigation
+
+<h3>Atendimentos</h3>
+
+<div>
+    <div class="padding-4 ConteudoLancarAtendimento">
+        <input type="text" name="Nome" @bind="viewModel.nome_atendente" placeholder="Nome do Atendente" />
+        <input type="text" name="Cliente" @bind="viewModel.clientes" placeholder="Cliente" />
+        <input type="text" name="Problema" @bind="viewModel.descricao_problema" placeholder="Problema" />
+        <input type="text" name="Notas" @bind="viewModel.notas_atendimento" placeholder="notas sobre o atendimento" />
+        <select name="NivelDificuldade" class="BotaoCascata" @bind="viewModel.nivel_dificuldade">
+            <option class="Facil" value="1">1 - Fácil</option>
+            <option class="Razoavel" value="2">2 - Razoável</option>
+            <option class="Medio" value="3">3 - Médio</option>
+            <option class="Complexo" value="4">4 - Complexo</option>
+            <option class="Dificil" value="5">5 - Difícil</option>
+        </select>
+        <button class="BotaoSimples" type="button" @onclick="Salvar">Salvar</button>
+    </div>
+
+</div>
+
+@code {
+ 
+    [Parameter] public int id { get; set; }
+    
+    private AtendimentoModel atendimento;
+    private AtendimentoModel viewModel = new AtendimentoModel();
+
+    private async Task Salvar()
+    {
+        viewModel.data_atendimento = DateTime.UtcNow;
+        await AtendimentoService.AddAtendimentoAsync(viewModel); 
+        Navigation.NavigateTo($"/Atendimento", true);
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        atendimento = await AtendimentoService.GetAtendimentoByIdAsync(id);
+    }
+}

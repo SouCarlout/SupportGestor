@@ -1,0 +1,52 @@
+﻿@using SupportGestor.Models
+@using SupportGestor.Services
+@inject NavigationManager Navigation
+@inject IAtendimentoServices AtendimentoServices
+@page "/lancamentos"
+
+<h3>Lista de Atendimentos</h3>
+
+<div class="table-container">
+    <h4>Atendimentos:</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Atendente</th>
+                <th>Cliente</th>
+                <th>Problema</th>
+                <th>Notas</th>
+                <th>Nível de Dificuldade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (atendimentos == null || !atendimentos.Any())
+            {
+                <tr>
+                    <td colspan="5" class="no-data">Nenhum atendimento encontrado.</td>
+                </tr>
+            }
+            else
+            {
+                foreach (var atendimento in atendimentos)
+                {
+                    <tr>
+                        <td>@atendimento.nome_atendente</td>
+                        <td>@atendimento.clientes</td>
+                        <td>@atendimento.descricao_problema</td>
+                        <td>@atendimento.notas_atendimento</td>
+                        <td>@atendimento.nivel_dificuldade</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<AtendimentoModel> atendimentos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        atendimentos = await AtendimentoServices.GetAllAtendimentosAsync();
+    }
+}
