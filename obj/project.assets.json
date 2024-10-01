@@ -5392,11 +5392,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\SupportGestor\\SupportGestor.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\SupportGestor.csproj",
       "projectName": "SupportGestor",
-      "projectPath": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\SupportGestor\\SupportGestor.csproj",
+      "projectPath": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\SupportGestor.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\SupportGestor\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\source\\repos\\Support\\SupportGestor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
