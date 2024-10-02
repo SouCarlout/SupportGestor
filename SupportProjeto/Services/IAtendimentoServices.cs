@@ -10,5 +10,7 @@ namespace SupportGestor.Services
         Task<AtendimentoModel> GetAtendimentoByIdAsync(int id);
         Task AddAtendimentoAsync(AtendimentoModel atendimento);
         Task UpdateAtendimentoAsync(AtendimentoModel atendimento);
+        Task DeleteAtendimentoAsync(int id);
+        
     }
 }

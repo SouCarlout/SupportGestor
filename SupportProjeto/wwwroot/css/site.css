@@ -129,31 +129,32 @@ a, .btn-link {
 
 /* Botão salvar */
 .BotaoSimples {
-    justify-content:center;
-    align-content:center;
-    display:flex;   
-    text-align:center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
     padding: 12px 20px;
     font-size: 16px;
     color: white;
-    background-color: #007bff; /* Cor azul para o botão */
+    background-color: #007bff;
     border: none;
     border-radius: 4px;
-    cursor:alias;
+    cursor: alias;
     transition: background-color 0.3s ease;
+    width:100px; 
 }
 
     .BotaoSimples:hover {
-        background-color: #0056b3; /* Muda a cor ao passar o mouse */
+        background-color: #0056b3; 
     }
 
-/* Adiciona espaçamento no fim do formulário */
 .ConteudoLancarAtendimento > *:last-child {
     margin-top: 20px;
 }
 
 .table-container {
-    max-width: 800px; 
+    max-width: 1100px; 
     margin: 20px auto; 
     border: 1px solid #ddd; 
     border-radius: 2px; 
@@ -174,14 +175,14 @@ th, td {
 
 th {
     background-color: #00000033; 
-    font-weight: bold; /* Negrito para cabeçalho */
+    font-weight: bold; 
 }
 
 tr:hover {
-    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+    background-color: #f1f1f1;
 }
 
 .no-data {
-    text-align: center; /* Centraliza a mensagem */
-    padding: 20px; /* Espaçamento */
+    text-align: center;
+    padding: 20px; 
 }

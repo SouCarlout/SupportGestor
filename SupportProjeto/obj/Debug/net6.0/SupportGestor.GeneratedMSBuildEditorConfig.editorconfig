@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SupportGestor
 build_property.RootNamespace = SupportGestor
-build_property.ProjectDir = C:\Users\Gabriel\Projetos\SupportGestor\SupportProjeto\
+build_property.ProjectDir = C:\Users\gabri\source\repos\Support\SupportGestor\SupportProjeto\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Gabriel\Projetos\SupportGestor\SupportProjeto
+build_property.MSBuildProjectDirectory = C:\Users\gabri\source\repos\Support\SupportGestor\SupportProjeto
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/App.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Pages/Index.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Pages/LancarAtendimentos.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Pages/LancarAtendimentos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFuY2FyQXRlbmRpbWVudG9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Pages/Media.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Pages/Media.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Shared/SurveyPrompt.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/_Imports.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Shared/MainLayout.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0a8nlre616
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Shared/NavMenu.razor]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2feqzwg6ts
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Pages/Error.cshtml]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Pages/_Host.cshtml]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriel/Projetos/SupportGestor/SupportProjeto/Pages/_Layout.cshtml]
+[C:/Users/gabri/source/repos/Support/SupportGestor/SupportProjeto/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

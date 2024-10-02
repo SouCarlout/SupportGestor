@@ -16,6 +16,7 @@ namespace SupportGestor.Models
         public string clientes { get; set; } = string.Empty;
         public string descricao_problema { get; set; } = string.Empty;
         public int nivel_dificuldade { get; set; }
+        public int tempo_estipulado { get; set; }
 
     }
 }

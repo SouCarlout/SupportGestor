@@ -11,16 +11,31 @@
         <input type="text" name="Nome" @bind="viewModel.nome_atendente" placeholder="Nome do Atendente" />
         <input type="text" name="Cliente" @bind="viewModel.clientes" placeholder="Cliente" />
         <input type="text" name="Problema" @bind="viewModel.descricao_problema" placeholder="Problema" />
-        <input type="text" name="Notas" @bind="viewModel.notas_atendimento" placeholder="notas sobre o atendimento" />
-        <select name="NivelDificuldade" class="BotaoCascata" @bind="viewModel.nivel_dificuldade">
+        <input type="text" name="Notas" @bind="viewModel.notas_atendimento" placeholder="Notas sobre o Atendimento" />
+        <p>Dificuldade</p>
+        <select name="NivelDificuldade" place class="BotaoCascata" @bind="viewModel.nivel_dificuldade"> 
+            <option value="" disabled selected>Dificuldade</option>
             <option class="Facil" value="1">1 - Fácil</option>
             <option class="Razoavel" value="2">2 - Razoável</option>
             <option class="Medio" value="3">3 - Médio</option>
             <option class="Complexo" value="4">4 - Complexo</option>
             <option class="Dificil" value="5">5 - Difícil</option>
         </select>
+        <p>Tempo gasto</p>
+        <select  name="NivelDificuldade" place class="BotaoCascata" @bind="viewModel.tempo_estipulado"> Tempo
+            <option value="" disabled selected hidden>Dificuldade</option>
+            <option class="Facil" value="1">1 - Rapido</option>
+            <option class="Razoavel" value="2">2 - Curto</option>
+            <option class="Medio" value="3">3 - Médio</option>
+            <option class="Complexo" value="4">4 - Longo</option>
+            <option class="Dificil" value="5">5 - Demorado</option>
+            <option class="Dificil" value="6">6 - Mais de um dia</option>
+        </select>
         <button class="BotaoSimples" type="button" @onclick="Salvar">Salvar</button>
+        <button class="BotaoSimples" type="button" @onclick="Alterar">Alterar</button>
     </div>
+    <br />
+    <br />
 
     <h3>Lista de Atendimentos</h3>
 
@@ -34,26 +49,30 @@
                     <th>Problema</th>
                     <th>Notas</th>
                     <th>Nível de Dificuldade</th>
+                    <th>Tempo Gasto</th>
                 </tr>
             </thead>
             <tbody>
                 @if (atendimentos == null || !atendimentos.Any())
                 {
                     <tr>
-                        <td colspan="5" class="no-data">Nenhum atendimento encontrado.</td>
+                        <td colspan="6" class="no-data">Nenhum atendimento encontrado.</td>
                     </tr>
                 }
                 else
                 {
                     foreach (var atendimento in atendimentos)
                     {
-                        <tr>
+                        <tr @ondblclick = "() => OnDoubleClick(atendimento.id)"> 
                             <td>@atendimento.nome_atendente</td>
                             <td>@atendimento.clientes</td>
                             <td>@atendimento.descricao_problema</td>
                             <td>@atendimento.notas_atendimento</td>
                             <td>@atendimento.nivel_dificuldade</td>
+                            <td>@atendimento.tempo_estipulado</td>
+                            <button class="BotaoSimples" @onclick="() => Deletar(atendimento.id)">Deletar</button>
                         </tr>
+                        
                     }
                 }
             </tbody>
@@ -77,11 +96,37 @@
         Navigation.NavigateTo($"/Atendimento", true);
 
     }
+    private async Task Alterar()
+    {
+        await AtendimentoService.UpdateAtendimentoAsync(atendimento);
+        Navigation.NavigateTo("/Atendimento", true);
+    }
+
+    private async Task Deletar(int id)
+    {
+        await AtendimentoService.DeleteAtendimentoAsync(id);
+        Navigation.NavigateTo($"/Atendimento", true);
+
+    }
+
+
 
     private List<AtendimentoModel> atendimentos;
 
     protected override async Task OnInitializedAsync()
     {
         atendimentos = await AtendimentoService.GetAllAtendimentosAsync();
+    }
+
+    private string Mensagem;
+
+    private async Task OnDoubleClick(int id)
+    {
+        var atendimentoSelecionado = atendimentos.FirstOrDefault(a => a.id ==id);
+        if(atendimentoSelecionado != null)
+        {
+            viewModel = atendimentoSelecionado;
+        }
+
     }
 }

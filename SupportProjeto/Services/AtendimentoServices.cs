@@ -36,5 +36,13 @@ namespace SupportGestor.Services
             _context.Atendimentos.Update(atendimento);
             await _context.SaveChangesAsync();
         }
+        public async Task DeleteAtendimentoAsync(int id) {
+           var atendimento = await _context.Atendimentos.FindAsync(id);
+            if(atendimento != null)
+            {
+                _context.Atendimentos.Remove(atendimento);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }
